@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F1FA"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="192dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/round"
+        android:fontFamily="@font/d"
+        android:onClick="onClickBtn"
+        android:text="로그인"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="302dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="292dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:fontFamily="@font/d"
+        android:hint=" 사용자 이름 입력"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/upw"
+        android:layout_width="302dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="388dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:fontFamily="@font/d"
+        android:hint=" 비밀번호 입력"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="91dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/take" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="186dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

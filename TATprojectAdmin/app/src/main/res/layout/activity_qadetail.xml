@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QADetail"
+    android:background="#E8F1FA">
+
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="60dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/take" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trip" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="410dp"
+        android:layout_height="721dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/divider15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/ansTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#F9F9F9"
+                android:fontFamily="@font/pu"
+                android:text="답변하기"
+                android:textSize="34sp" />
+
+            <View
+                android:id="@+id/divider14"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ansWriter"
+                    android:layout_width="165dp"
+                    android:layout_height="22dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/pu"
+                    android:text="작성자를 선택"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="178dp"
+                    android:layout_height="match_parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/creditBtn"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:background="#BCD5E9"
+                    android:fontFamily="@font/pu"
+                    android:onClick="onClickAns"
+                    android:text="등록"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.695" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider13"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:id="@+id/QAAnswered"
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:fontFamily="@font/pu"
+                android:hint="답변을 입력하세요."
+                android:inputType="textMultiLine"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/divider11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/QATitle"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_marginTop="10dp"
+                android:background="#F9F9F9"
+                android:fontFamily="@font/pu"
+                android:text="TextView"
+                android:textColor="#939393"
+                android:textSize="34sp" />
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/QAWriter"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/pu"
+
+                    android:text="TextView"
+                    android:textColor="#939393"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/divider10"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/QAWriteDate"
+                    android:layout_width="205dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/pu"
+                    android:text="TextView"
+                    android:textAlignment="textStart"
+                    android:textColor="#939393"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/QAMainContents"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:background="#F9F9F9"
+                android:fontFamily="@font/pu"
+                android:text="TextView"
+                android:textColor="#939393"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
