@@ -111,6 +111,8 @@ _ⅰ. 프로젝트 요약_
 ##
 
 ### 시행영상
+#### 사용자용 APP
+https://github.com/OhSook/TAT-Project/assets/62128698/bff33f6f-502a-4d9c-a297-719b7c5539af
 
 
  
