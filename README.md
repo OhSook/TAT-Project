@@ -1,6 +1,6 @@
-### TAT 여행 패키지 어플리케이션
+## TAT 여행 패키지 어플리케이션
 
-**1\. 서론**
+### 서론
 
 **a. 어플리케이션 제작 동기**
 
@@ -14,7 +14,7 @@
 | **어플리케이션 제작** | DB를 제어할 수 있는 사용자별 어플리케이션을 제 작할 언어와 도구를 선택하고 제작 |
 | **테스트** | 동료들과 테스트를 통해 안정성을 확보 |
 
-**2\. 본론**
+### 본론
 
 **a. 데이터 모델링**
 
@@ -25,11 +25,11 @@ _**2) Table Details**_
 
 **1\. COMPANY\_USER (사원 데이터)**
 
-[##_Image|kage@oH5Fr/btsFK9bADnf/tMux9afbDUaohbwSLY84j1/img.png|CDM|1.3|{"originWidth":566,"originHeight":155,"style":"alignLeft"}_##]
+![img (1)](https://github.com/OhSook/TAT-Project/assets/62128698/4fd87fb4-7599-41f4-a851-37be3a2972a7)
 
 **2\. CREATE\_PACK (패키지 데이터)**
 
-[##_Image|kage@bKaBP6/btsFLuT5VGG/C0vOELzhX9SEAX31Odt7Nk/img.png|CDM|1.3|{"originWidth":569,"originHeight":151,"style":"alignLeft"}_##]
+![img (2)](https://github.com/OhSook/TAT-Project/assets/62128698/7228fc10-c658-4fc5-b6cf-160b5dd9f6ad)
 
 **3\. CUS\_USER (회원 데이터)**
 
@@ -37,4 +37,55 @@ _**2) Table Details**_
 
 **4\. QA (질문 데이터)**
 
-[##_Image|kage@d7Xa8L/btsFMKhCZ4Z/BXBvxvXjmDKAyJVNneXhI1/img.png|CDM|1.3|{"originWidth":569,"originHeight":162,"style":"alignLeft"}_##]
+![img (4)](https://github.com/OhSook/TAT-Project/assets/62128698/b75a9179-b8fc-4f22-ad9c-e2d253299255)
+
+_**3) Database 구축 명세**_
+
+database : Oracle Database
+
+server : 학습용 노트북
+
+**b. Application 설계**
+
+**a) 사용자 정의**
+
+| **사용자**  | **설명** |
+| --- | --- |
+| 관리자, 직원  | 패키지 등록, 답변, 시스템 관리를 위한 어플리케이션 |
+| 일반 사용자  | 여행패키지 예약 및 QnA를 위한어플리케이션 |
+
+**b) 관리자, 직원 App**
+
+_• Activity 스토리보드_
+
+[##_Image|kage@lTLXD/btsFJsccMZv/lxZMEeHRaLH2wE8hCYStTK/img.png|CDM|1.3|{"originWidth":898,"originHeight":725,"style":"alignLeft","width":724,"height":585}_##]
+
+_• Activity 명세_
+
+[##_Image|kage@bPW7fZ/btsFJ8EjdA1/wG9cWYWitzKdxjX20a4XX0/img.png|CDM|1.3|{"originWidth":598,"originHeight":422,"style":"alignLeft","width":540,"height":381}_##]
+
+**c) 일반 사용자 App**
+
+_• Activity 스토리보드_
+
+[##_Image|kage@cKv5i8/btsFI3wZDIu/UWb9L60XCXeW3GxGLLnuK1/img.png|CDM|1.3|{"originWidth":1105,"originHeight":744,"style":"alignLeft","width":720}_##]
+
+_• Activity 명세_
+
+[##_Image|kage@l8lnh/btsFMLOtqk6/5DrowQis41tCnrfTceYjk0/img.png|CDM|1.3|{"originWidth":751,"originHeight":501,"style":"alignLeft","width":554,"height":370}_##]
+
+_•App 테스트 및 검증_
+
+ⅰ. Unit Testing
+
+ - Activity 간 Intent로 전달하는 stringExtra값과 RecyclerView, Adapter, Item Class file 간 의 데이터의 흐름을 Toast 메세지와 레이아웃에 배치된 TextView를 이용해 디버깅함.
+
+ - 각자가 만든 Activity Class code를 서로 검토하고, Intent값을 넘길 때 사용하는 name이 다 르지 않게 유의하에 수정하였으며 각자 개발한 Activity Class code를 취합하며 테스트를 진행함.
+
+ii. Integration Testing
+
+\- 테스트용 여행 패키지 데이터, 사용자 데이터, 관리자 데이터를 생성해 여행 패키지 작성, 예약, 결제 등의 기능들을 구동시킴.
+
+iii. beta testing
+
+\- 다른 팀의 팀원들과 beta testing을 통해 피드백을 제공 받고, 그에 따라 추가 디 버깅을 실시하였음.
