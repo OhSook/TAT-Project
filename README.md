@@ -22,20 +22,22 @@
 | **데이터베이스 설계** | ERD를 제작하고 DB를 구축 |
 | **어플리케이션 제작** | DB를 제어할 수 있는 사용자별 어플리케이션을 제 작할 언어와 도구를 선택하고 제작 |
 | **테스트** | 동료들과 테스트를 통해 안정성을 확보 |
+
+**c. 프로젝트 구조**
+
+<img src="https://github.com/OhSook/TAT-Project/assets/62128698/f97f9721-2e1e-4b3e-bd5c-f85ff5b25a93.png" width="400" height="400"/>
+
 ##
 ### 본론
 
 #### **a. 데이터 모델링**
 
-#### _1) 프로젝트 구조_
 
-<img src="https://github.com/OhSook/TAT-Project/assets/62128698/f97f9721-2e1e-4b3e-bd5c-f85ff5b25a93.png" width="400" height="400"/>
-
-#### _2) ERD 모델링_
+#### _1) ERD 모델링_
 
 ![img](https://github.com/OhSook/TAT-Project/assets/62128698/0e36dd49-e4a7-4c6d-bd73-5a233fb8f75c)
 
-#### _**3) Table Details**_
+#### _**2) Table Details**_
 
 #### **1\. COMPANY\_USER (사원 데이터)**
 
