@@ -27,10 +27,15 @@
 
 #### **a. 데이터 모델링**
 
-#### _1) ERD 모델링_
+#### _1) 프로젝트 구조_
+
+![그림1](https://github.com/OhSook/TAT-Project/assets/62128698/e79f87e6-5b83-41ed-abd2-c9901007b03a)
+
+#### _2) ERD 모델링_
+
 ![img](https://github.com/OhSook/TAT-Project/assets/62128698/0e36dd49-e4a7-4c6d-bd73-5a233fb8f75c)
 
-#### _**2) Table Details**_
+#### _**3) Table Details**_
 
 #### **1\. COMPANY\_USER (사원 데이터)**
 
