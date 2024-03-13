@@ -29,7 +29,7 @@
 
 #### _1) 프로젝트 구조_
 
-![그림1](https://github.com/OhSook/TAT-Project/assets/62128698/e79f87e6-5b83-41ed-abd2-c9901007b03a)
+<img src="https://github.com/OhSook/TAT-Project/assets/62128698/f97f9721-2e1e-4b3e-bd5c-f85ff5b25a93.png" width="400" height="400"/>
 
 #### _2) ERD 모델링_
 
