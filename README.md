@@ -19,8 +19,7 @@
 **a. 데이터 모델링**
 
 _**1) ERD 모델링**_
-
-[##_Image|kage@F3VDO/btsFJKp2FCG/uMXzfVztDlzKbdtBUVkXzk/img.png|CDM|1.3|{"originWidth":1436,"originHeight":785,"style":"alignLeft","width":617}_##]
+![img](https://github.com/OhSook/TAT-Project/assets/62128698/0e36dd49-e4a7-4c6d-bd73-5a233fb8f75c)
 
 _**2) Table Details**_
 
@@ -34,7 +33,7 @@ _**2) Table Details**_
 
 **3\. CUS\_USER (회원 데이터)**
 
-[##_Image|kage@cVLvlM/btsFKNNrxoe/eacwau7OU6T6HwxoxViyXK/img.png|CDM|1.3|{"originWidth":559,"originHeight":185,"style":"alignLeft"}_##]
+![img (3)](https://github.com/OhSook/TAT-Project/assets/62128698/c5237e83-905d-4024-a4dd-5d100a6337ac)
 
 **4\. QA (질문 데이터)**
 
